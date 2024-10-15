@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        .header {
+            background-color: #f1f1f1;
+            padding: 5px;
+            text-align: center;
+        }
+
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto ;
+            background-color: #ffffff;
+            padding: 10px;
+        }
+
+        .grid-item {
+            
+            font-size: 30px;
+            text-align: center;
+        }
+
+        img {
+            width: 200px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        @media screen and (max-width: 900px) {
+            .grid-container {
+                grid-template-columns: auto auto;
+
+    
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            .grid-container {
+                grid-template-columns: auto auto auto auto;
+            }
+        }
+        table,
+        tr {
+            border: 2px double black;
+            background-color: rgb(0, 0, 0);
+            align-content: center;
+            width: 100%;
+
+
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                'box-1 box-2 box-3 box-4'
+                'box-5 box-6 box-6 box-7'
+                'box-5 box-8 box-9 box-7'
+            ;
+            gap: 0px;
+            width: 100%;
+            height: 600px;
+            padding: 3px 0px;
+            margin: auto;
+
+        }
+
+        .container>div {
+            color: white;
+            padding: 20px;
+            text-align: center;
+
+        }
+
+
+
+
+        .grey {
+            background-color: rgb(41, 41, 41);
+            grid-area: box-5;
+        }
+
+        .black3 {
+            background-color: black;
+            grid-area: box-6;
+        }
+
+        .grey2 {
+            background-color: rgb(32, 32, 32);
+            grid-area: box-7;
+        }
+        .footer {
+  background-color: #000000;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  margin-top: 10PX;
+}
+a{
+    font-size: 25px;
+
+}
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a
+            href="https://www.bing.com/search?pglt=41&q=html&cvid=b69f4d11f8734befa98ae3230013c54b&gs_lcrp=EgZjaHJvbWUqBAgAEAAyBAgAEAAyBAgBEC4yBAgCEAAyBAgDEAAyBAgEEAAyBAgFEAAyBggGEEUYQTIGCAcQRRg8MgYICBBFGDzSAQgyMzAwajBqMagCALACAA&FORM=ANNTA1&PC=U531">HTML</a>
+        <a
+            href="https://www.bing.com/search?pglt=41&q=css&cvid=6828b8619f5849b2b7ae6aed2de68053&gs_lcrp=EgZjaHJvbWUqBAgAEAAyBAgAEAAyBAgBEC4yBAgCEAAyBAgDEAAyBAgEEAAyBAgFEAAyBggGEEUYPDIGCAcQRRg8MgYICBBFGDzSAQgxOTAzajBqMagCALACAA&FORM=ANNTA1&PC=U531">css</a>
+        <a
+            href="https://www.bing.com/search?pglt=41&q=java&cvid=aa1840acefdc4089a06141351eb8768c&gs_lcrp=EgZjaHJvbWUqBAgAEAAyBAgAEAAyBAgBEC4yBAgCEC4yBAgDEAAyBAgEEAAyBAgFEAAyBAgGEAAyBAgHEAAyBAgIEADSAQgyMjc4ajBqMagCALACAA&FORM=ANNTA1&PC=U531">JAVA</a>
+        <a
+            href="https://www.bing.com/search?pglt=41&q=php&cvid=51f2f765622f42b3bd42448a0a175ddc&gs_lcrp=EgZjaHJvbWUqBAgAEAAyBAgAEAAyBAgBEC4yBAgCEC4yBAgDEAAyBAgEEAAyBAgFEAAyBAgGEAAyBAgHEAAyBAgIEADSAQgyMzA0ajBqMagCALACAA&FORM=ANNTA1&PC=U531">PHP</a>
+        <a
+            href="https://www.bing.com/search?pglt=41&q=MY+SQL&cvid=1043bbabac82427f86e4619f7fdb0ee9&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIECAEQLjIECAIQADIECAMQLjIECAQQADIECAUQADIECAYQADIECAcQADIECAgQANIBCDQyMTJqMGoxqAIAsAIA&FORM=ANNTA1&PC=U531">MY
+            SQL</a>
+        <a href="https://www.bing.com/search?pglt=41&q=c%2B%2B&cvid=738ea058df9b488c94d09b6172cdf355&gs_lcrp=EgZjaHJvbWUqBAgAEAAyBAgAEAAyBAgBEC4yBAgCEAAyBAgDEAAyBAgEEAAyBAgFEAAyBAgGEAAyBAgHEAAyBAgIEADSAQgyMTE2ajBqMagCALACAA&FORM=ANNTA1&PC=U531
+        ">C++</a>
+    </div>
+
+    <div class="container">
+
+        <div class="grey">
+            <h1>FORM</h1>
+            <form method="get">
+                <div>
+                </div>
+                <h2 style="text-align: center;"> Student Details</h2>
+                <table id="1st_table" cellspacing="5px" cellpadding="5%" text-align="center">
+                    <tr>
+                        <td width="100px"> Course Name </td>
+                        <td width="500px"> <input type="text" name="course name"></td>
+                    </tr>
+                    <tr>
+                        <td>purpose of course</td>
+                        <td><textarea rows="3" cols="15" name="purpose"> </textarea></td>
+                    </tr>
+                    <tr>
+                        <td> student's full name:</td>
+                        <td>
+                            <input type="text" name="full name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> father's name: </td>
+                        <td> <input type="text" name="father's name"></td>
+                    </tr>
+                    <tr>
+                        <td>mother's name:</td>
+        
+                        <td><input type="text" name="mother's name"></td>
+                    </tr>
+                    <tr>
+                        <td> contact number:</td>
+                        <td><input type="text" name="contact no."></td>
+                    </tr>
+                    <tr>
+                        <td>hours of class:</td>
+                        <td> <input type="checkbox" name="class" id="class">one hours
+                            <input type="checkbox" name="class" id="class">two hours
+                            <input type="checkbox" name="class" id="class">three hours
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> qualification:</td>
+                        <td> <select name="qua." id="qualification">
+                                <option value="1">high</option>
+                                <option value="2">sen. sec.</option>
+                                <option value="3">bachelors</option>
+                                <option value="4">masters</option>
+                            </select></td>
+                    </tr>
+        
+        
+                </table>
+            </form>
+        </div>
+        <div class="black3">
+            <h2>IMAGES</h2>
+
+            <div class="grid-container">
+                <div class="item1"> <img
+                        src="https://images.unsplash.com/photo-1692470124805-cd3ba39d0e3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                        style="width:100%"></div>
+                <div class="grid-item"><img
+                        src="https://images.unsplash.com/photo-1673235966910-f2a443bdbaaf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80"
+                        style="width:100%"></div>
+                <div class="grid-item"><img
+                        src="https://images.unsplash.com/photo-1692368234597-9386e31f10fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+                        style="width:100%"></div>
+               
+                <div class="grid-item"><img
+                        src="https://plus.unsplash.com/premium_photo-1691054888146-0858efd80a65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                        style="width:100%"></div>
+               
+            </div>
+            <div class="grid-container">
+                <div class="item1"> <img
+                        src="https://images.unsplash.com/photo-1692470124805-cd3ba39d0e3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                        style="width:100%"></div>
+                <div class="grid-item"><img
+                        src="https://images.unsplash.com/photo-1673235966910-f2a443bdbaaf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80"
+                        style="width:100%"></div>
+                <div class="grid-item"><img
+                        src="https://images.unsplash.com/photo-1692368234597-9386e31f10fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+                        style="width:100%"></div>
+               
+                <div class="grid-item"><img
+                        src="https://plus.unsplash.com/premium_photo-1691054888146-0858efd80a65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                        style="width:100%"></div>
+               
+            </div>
+            <a href="">click for more images</a>
+        </div>
+        <div class="grey2">
+            <h2>ABOUT US</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, nam?Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Aut nesciunt doloribus cumque asperiores, minima, necessitatibus unde,
+                obcaecati architecto reiciendis quidem labore eaque officia iste nam temporibus vero sint animi
+                consequatur iure aliquam quae porro et tempore repudiandae. Aspernatur earum doloribus labore iste
+                voluptatibus, maiores culpa consectetur facere fuga magnam ratione totam officia numquam? Provident
+                aspernatur quas totam minima cum, nisi deserunt. Et maxime aperiam facere voluptates, eligendi nisi
+                rerum vitae libero nam, distinctio earum explicabo atque asperiores quia consequuntur ducimus eveniet
+                error cumque. Atque eius harum animi. Voluptatem sequi consequatur dicta nobis, cum pariatur eum facilis
+                qui iusto amet. Temporibus?</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sA2vgFR-fZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+ 
+    </div>
+    <div class="footer">
+        <footer>
+            <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+            </footer>
+      </div>
+        
+</body>
+
+</html>

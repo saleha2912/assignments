@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Looping Arrays</title>
+  </head>
+  <body>
+    <h2>Looping an Array</h2>
+    <p id="demo"></p>
+    <h2>adding array element</h2>
+    <p id="demo1"></p>
+    <script>
+      const city = ["ludhiana", "jalandhar", "chandigarh", "patiala"];
+      let pun = city.length;
+
+      let text = "<ul>";
+      for (let c = 0; c < pun; c++) {
+        text += "<li>" + city[c] + "</li>";
+      }
+      text += "</ul>";
+
+      document.getElementById("demo").innerHTML = text;
+      const languages = ["java", "php", "c"];
+languages[5] = "c++";
+
+let lLen = languages.length;
+let font = "";
+for (i = 0; i < lLen; i++) {
+  font += languages[i] + "<br>";
+}
+
+document.getElementById("demo1").innerHTML = font;
+    </script>
+  </body>
+</html>

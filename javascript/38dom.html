@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggling an Image Source</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: blueviolet;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            transition: 0.3s;
+        }
+        img:active{
+            transform: scale(0.8);
+        }
+    </style>
+</head>
+<body>
+    <img id="image1" src="/white-tshirt.jpg" onclick="changeImage()">
+
+    <script>
+             function changeImage() {
+                let displayImage = document.getElementById('image1')
+                if(displayImage.src.match('./white-tshirt.jpg')){
+                    displayImage.src = './brown-jacket.jpg'
+                }else{
+                    displayImage.src = './white-tshirt.jpg'
+                }
+                
+             }
+    </script>
+</body>
+</html>

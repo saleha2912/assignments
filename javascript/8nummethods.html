@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>tostring() methods</h2>
+    <p id="demo"></p>
+    <h2>toexponential() , toPrecision() and toFixed() methods</h2>
+    <p id="demoa"></p>
+    <h2>converting variable to number</h2>
+    <p id="demo1"></p>
+    <script>
+      document.getElementById("demo").innerHTML =
+        "the tostring() method" +
+        "<br>" +
+        "123".toString() +
+        "<br>" +
+        (123).toString() +
+        "<br>" +
+        (100 + 23).toString();
+      let x = 5.567;
+      document.getElementById("demoa").innerHTML =
+        "toExponentia()" +
+        "<br>" +
+        x.toExponential(2) +
+        "<br>" +
+        x.toExponential(4) +
+        "<br>" +
+        "toFixed()" +
+        "<br>" +
+        x.toFixed(2) +
+        "<br>" +
+        x.toFixed(4) +
+        "<br>" +
+        "toPrecision()" +
+        "<br>" +
+        x.toPrecision(2) +
+        "<br>" +
+        x.toPrecision(4) +
+        "<br>";
+
+      document.getElementById("demo1").innerHTML =
+        Number(true) +
+        "<br>" +
+        Number(false) +
+        "<br>" +
+        Number("10") +
+        "<br>" +
+        Number("  10") +
+        "<br>" +
+        Number(" 10  ") +
+        "<br>" +
+        Number("10.33") +
+        "<br>" +
+        Number("10,33") +
+        "<br>" +
+        parseInt("-10") +
+        "<br>" +
+        parseInt("-10.33") +
+        "<br>" +
+        parseInt("10 6") +
+        "<br>" +
+        parseInt("10 boy") +
+        "<br>" +
+        parseFloat("10") +
+        "<br>" +
+        parseFloat("10.33") +
+        "<br>" +
+        parseFloat("10 6") +
+        "<br>" +
+        parseFloat("10 boy") +
+        "<br>" +
+        parseFloat("boy 10");
+    </script>
+  </body>
+</html>

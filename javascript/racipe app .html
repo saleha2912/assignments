@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicious Recipes</title>
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1><span class="material-symbols-outlined">
+          </span>Delicious Recipes</h1>
+        <form>
+          <input
+            type="text"
+            placeholder="Search for Recipes..."
+            class="searchBox"
+
+          />
+          <button type="submit" class="searchBtn"  onclick="fetchRecipes()">Search</button>
+        </form>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="recipe-container">
+          <h2>Search your favourite Recipe</h2>
+        </div>
+        <div class="recipe-details">
+            <button type="button" class="recipe-close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <div class="recipe-details-content"></div>
+        </div>
+      </section>
+    </main>
+    <script src="script4.js"></script>
+  </body>
+</html>

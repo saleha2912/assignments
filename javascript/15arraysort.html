@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Sort Methods</title>
+  </head>
+  <body>
+    <h2>Alpabetic Sort and Numeric Sort</h2>
+    <p>
+      Array sort() <br />
+      Array reverse()<br />
+      Array toSorted()<br />
+      Array toReversed()<br />
+      Numeric Sort<br />
+      Random Sort<br />
+      Math.min() <br />Math.max() <br />Home made Min() <br />Home made Max()
+    </p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+      const veg = ["Brinjal", "pea", "potato", "Onion"];
+      document.getElementById("demo").innerHTML =
+        veg.sort() + "<br>" + veg.reverse();
+
+      const num = [30, 101, 3, 5, 45, 20];
+      document.getElementById("demo1").innerHTML = num;
+
+      num.sort(function (a, b) {
+        return a - b;
+      });
+      document.getElementById("demo2").innerHTML =
+        " ascending =" +
+        num +
+        "<br>" +
+        " descending =" +
+        num.sort(function (a, b) {
+          return b - a;
+        }) +
+        "<br>" +
+        "randomly sorted numbers " +
+        num.sort(function () {
+          return 0.4 - Math.random() 
+        });
+        const points = [10, 200, 15, 55, 27, 80];
+        document.getElementById("demo3").innerHTML ="lowest number " + myArrayMin(points);
+
+function myArrayMin(arr) {
+  return Math.min.apply(null, arr);
+};
+const numbers = [10, 200, 15, 55, 27, 80];
+document.getElementById("demo4").innerHTML = "highest number " + myArraymax(numbers);
+
+function myArraymax(arr) {
+  return Math.max.apply(null, arr);
+};
+    </script>
+  </body>
+</html>

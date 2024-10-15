@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays method</title>
+  </head>
+  <body>
+    <h2>The concat() Method</h2>
+    <p id="demo"></p>
+    <h2>The splice() Method</h2>
+    <p id="demo1"></p>
+    <h2>The slice() Method</h2>
+    <p id="demo2"></p>
+
+    <script>
+      const half = ["my name is"];
+      const half2 = ["aliya."];
+      const full = half.concat(half2);
+
+      document.getElementById("demo").innerHTML = full;
+      const veg = ["pea", "carrot", "radish", "ginger"];
+      veg.splice(2, 0, "Lemon", "cucumber");
+      document.getElementById("demo1").innerHTML = veg;
+      const veg2 = ["pea", "carrot", "radish", "ginger"];
+
+      document.getElementById("demo2").innerHTML = veg2.slice(1, 3);
+    </script>
+  </body>
+</html>

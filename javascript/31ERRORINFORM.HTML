@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Error</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+        <h2>Create Your Account</h2>
+
+        <div class="input-field">
+            <label for="">*Username</label>
+            <input type="text" id="username" placeholder="username">
+            <span></span>
+        </div>
+
+        <div class="input-field">
+            <label for="">*Email</label>
+            <input type="text" id="email" placeholder="email address">
+            <span>error msg</span>
+        </div>
+
+        <div class="input-field">
+            <label for="">*Password</label>
+            <input type="text" id="pass1" placeholder="Password">
+            <span>error msg</span>
+        </div>
+
+<div class="input-field">
+            <label for="">*Confirm Password</label>
+            <input type="text" id="pass2" placeholder="Confirm Password">
+            <span>error msg</span>
+        </div>
+        <input type="submit" id="submit" value="Submit">
+        </div>
+    </div>
+
+    <script>
+
+document.getElementById("submit").addEventListener("click",function(event){
+  event.preventDefault();
+
+});
+checkData();
+var username = document.getElementById("username");
+
+function checkData() {
+    var usernameValue = username.Value.trim();
+    if(usernameValue==""){
+        setError(username, "username can't be blank");
+    }else{
+        setSuccess(username);
+    }
+    
+}
+function setError(u, msg) {
+    var parentBox = u.parentElement;
+    parentBox.className="input-field error";
+   var span =  parentBox.querySelector("span");
+   span.innerText=msg;
+}
+    </script>
+</body>
+</html>

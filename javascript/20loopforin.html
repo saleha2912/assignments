@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS for in loop</title>
+</head>
+<body>
+    <h1>for in loop</h1>
+    <p id="demo"> </p>
+    <script>
+        const student = {name:"Raj", class:"10th", section:"A"}; 
+let txt = "";
+for (let x in student) {
+  txt += student[x] + "<br>";
+}
+document.getElementById("demo").innerHTML = txt ;
+
+var a = ["hello","dear","students"];
+
+a.forEach(loop);
+function loop(value) {
+    document.write(value + "  ")
+}
+
+</script>
+
+</body>
+</html>

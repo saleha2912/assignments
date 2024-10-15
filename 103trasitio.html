@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trasition</title>
+    <style>
+        body {
+            background-color: rgb(85, 82, 82);
+        }
+
+        div {
+            background-color: white;
+            height: 300px;
+            width: 20%;
+            margin: 30px;
+            float: left;
+            padding: 50px;
+            transition: width 2s height 2s;
+            text-align: center;
+
+        }
+
+        div:hover {
+            background-color: yellow;
+            box-shadow: 0px 10px 30px rgb(248, 248, 68);
+            width: 22%;
+            height: 320px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: 5px dotted yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="flowers.gif" alt="rose-flower" height="80%" width="60%">
+        <p>
+            rose-flower
+        </p>
+    </div>
+    <div>
+        <img src="rose-blue.jpeg" alt="rose-flower" width="60%" height="80%">
+        <p>
+            rose-blue
+        </p>
+    </div>
+    <div>
+        <img src="tulip.jpeg" alt="tulip" width="60%" height="80%">
+        <p>
+            tulip
+        </p>
+    </div>
+</body>
+
+</html>

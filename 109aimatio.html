@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+div {
+  width: 200px;
+  height: 200px;
+  background-image: url(HTML.png);
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {background-image: url(flowers-rose.gif); left:0px; top:0px;}
+  25%  {background-image: url(f6.gif); left:400px; top:0px;}
+  50%  {background-image: url(Flowers\ Flowers\ For\ You\ .gif); left:400px; top:400px;}
+  75%  {background-image: url(flowers.gif); left:0px; top:400px;}
+  100% {background-image: url(rose-flower.gif); left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

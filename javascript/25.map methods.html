@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map methods</title>
+</head>
+<body>
+    <h2>Map.get method</h2>
+    <p id="demo"></p>
+    <h2>Map.size method</h2>
+    <p id="demo1"></p>
+    <h2>Map.delete method</h2>
+    <p id="demo2"></p>
+    <h2>Map.has method</h2>
+    <p id="demo3"></p>
+    <h2>Map.forEach method</h2>
+    <p id="demo4"></p>
+    <h2>Map.entriesmethod</h2>
+    <p id="demo5"></p>
+    <script>
+        const mymap = new Map();
+        // Set Map Values
+mymap.set("key1", "hello");
+mymap.set("key2", "java");
+mymap.set("key3", "script");
+document.getElementById("demo").innerHTML = mymap.get("key1");
+document.getElementById("demo1").innerHTML = mymap.size;
+const size = mymap.delete("key1")
+document.getElementById("demo2").innerHTML = mymap.size ;
+document.getElementById("demo3").innerHTML = mymap.has("key2");
+let text = "";
+mymap.forEach (function(value, key) {
+  text += key + ' = ' + value + "<br>"
+})
+
+document.getElementById("demo4").innerHTML = text;
+let txt = "";
+for (const x of mymap.entries()) {
+  txt += x + "<br>";
+} // (use map.keys,map.values  same , but result different)
+
+document.getElementById("demo5").innerHTML = txt;
+    </script>
+</body>
+</html>

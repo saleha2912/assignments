@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object constructor</title>
+  </head>
+  <body>
+    <h2>object constructor</h2>
+    <p id="constructor"></p>
+    <h2>using loop</h2>
+    <p id="using loop"></p>
+    <script>
+      function Employee(name, age, designation) {
+        this.name = name;
+        this.age = age;
+        this.designation = designation;
+      }
+      const Employee1 = new Employee("abc", 25, "manager");
+      document.getElementById("constructor").innerHTML =
+        JSON.stringify(Employee1);
+      // using loop
+      let text = "";
+      for (let x in Employee1) {
+        text += "<li>" + Employee1[x] + "</li>" ;
+      }
+      document.getElementById("using loop").innerHTML = text;
+    </script>
+  </body>
+</html>

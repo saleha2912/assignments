@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient</title>
+    <style>
+    #lefttoright {
+        height: 100px;
+        width: 500px;
+        background-image: linear-gradient(45deg, green,blue);
+      }
+      #righttoleft{
+        height: 100px;
+        width: 500px;
+        background-image: linear-gradient(90deg ,yellow,red);
+      }
+      #trans {
+  height: 100px;
+  width: 500px;
+  background-image: linear-gradient( 0deg,  purple,blue);
+}
+      </style>
+</head>
+<body>
+    <h2>45 deg left to right</h2>
+    <div id="lefttoright"></div>
+    <h2>90deg left to right</h2>
+    <div id="righttoleft"></div>
+    <h2> 0 deg top to bottom</h2>
+    <div id="trans"></div>
+
+</body>
+</html>

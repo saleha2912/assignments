@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Find and Search Methods</title>
+</head>
+<body>
+    <h1>Array Find and Search Methods</h1>
+<p>
+    <pre>
+    Array indexOf()
+    Array lastIndexOf()
+    Array includes()
+    Array find()
+    Array findIndex()
+    Array findLast()
+    Array findLastIndex()</pre>
+</p>   
+<p id="demo"></p> 
+<p id="demo2"></p> 
+    <script>
+ const veg = ["pea", "carrot", "radish", "carrot", "ginger"];
+const position= veg.indexOf("carrot") + 1 ;
+let lastposition= veg.lastIndexOf("carrot") + 1;
+let firstveg = veg.find(myFunction);
+
+ document.getElementById("demo").innerHTML = "carrot is found in position " + position
+ + "<br>" +
+"carrot is found in last position " + lastposition
++ "<br>" +
+veg.includes("radish")
++ "<br>" +
+"First veg  is " + firstveg;
++ "<br>" ;
+
+function myFunction(value, index, array) {
+  return  value = veg[0];
+}
+const numbers = [8, 12, 19, 25, 39];
+
+document.getElementById("demo2").innerHTML = "First number over 20 has index " + numbers.findIndex(myFunction)
++ "<br>" +
+numbers.findLast(x => x > 20)
++ "<br>" +
+numbers.findLastIndex(x => x > 20);
+
+function myFunction(value, index, array) {
+  return value > 20;
+}
+
+    </script>
+</body>
+</html>

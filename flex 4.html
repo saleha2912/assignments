@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <style>
+        .title {
+            width: 100%;
+            background-color: olive;
+            color: white;
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: row;
+            align-content: space-around;
+            background-color: gray;
+            flex-wrap: nowrap;
+
+
+        }
+
+        .nav>div {
+            color: olive;
+            background-color: white;
+            border: 2px solid black;
+            text-align: center;
+            width: 250px;
+            margin: 10px;
+            font-size: 20px;
+            line-height: 50px;
+
+        }
+        .nav>div:hover {
+        background-color: olive;
+        color: white;
+        }
+        
+
+        .body {
+            display: flex;
+            align-content: space-around;
+            background-color: rgb(46, 44, 44);
+            height: 600px;
+            align-items: stretch;
+            border-bottom: 10px solid black;
+            padding: 10px;
+
+        }
+
+        .body>div {
+            margin: 15px;
+            background-color: white;
+            padding: 10px;
+        }
+
+        button {
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+        .bottom{
+            width: 100%;
+            background-color: olive;
+            color: white;
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+
+        }
+        @media screen and (max-width: 700px) {
+   .nav {   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="title">
+        <h1>Power Grid Homepage </h1>
+    </div>
+    <div class="nav">
+        <div>Home</div>
+        <div>Aout</div>
+        <div>Blog</div>
+        <div>Careers</div>
+        <div>Cotact us</div>
+    </div>
+    <div class="body">
+        <div><img src="HTML.png" alt="flower">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor ullam
+            voluptas in veniam neque nisi.
+            <button>Go Somewhere</button>
+        </div>
+        <div><img src="flowers.gif" alt="flower">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus veniam
+            nisi ullam magnam pariatur vero
+            impedit. Vitae nesciunt nulla nam! <button>Click Me</button></div>
+        <div><img src="rose-blue.jpeg" alt="rose">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet maiores
+            incidunt ipsum libero blanditiis
+            cupiditate ea. Deserunt molestiae suscipit consequatur labore, tenetur dolorem amet, ipsa quae odio, ad
+            consequuntur tempora. <button>Do Something</button> </div>
+    </div>
+    <div class="bottom">Copyright @ 2016</div>
+</body>
+
+</html>

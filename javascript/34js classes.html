@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js classes</title>
+</head>
+<body>
+    <script>
+        class emp{
+            constructor(n){
+                this.name = n;
+                document.write("emp constructor called...");
+            }
+            msg(){
+                console.log("hi...");
+            }
+        }
+
+        class manager extends emp{
+            constructor(p, d){
+                super(p);
+                this.department = d;
+            }
+
+            info(){
+                super.msg();
+                console.log(this.name + "is manager of department" + this.department);
+            }
+
+        }
+        let mng1 = new manager("aliya", "development");
+
+        console.log(mng1.info());     
+        
+        class admin extends manager{
+        }
+            let admin1 = new admin("saleha", "development");
+            console.log(admin);
+       
+    
+    </script>
+</body>
+</html>

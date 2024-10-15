@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>array methods</title>
+  </head>
+  <body>
+    <h2>JS Array Methods</h2>
+    <P>
+  <pre>   
+Array length
+Array toString()
+Array at()
+Array join()
+Array pop()
+Array push()
+rray shift()
+Array unshift()
+Array delete()
+</pre> 
+    </P>
+
+    <p id="demo"></p>
+
+    <script>
+      const WD = ["HTML", "CSS", "JS", "PHP"];
+      let size = WD.length;
+      document.getElementById("demo").innerHTML =
+        size +
+        "<br>" +
+        WD.toString() +
+        "<br>" +
+        WD.at(2) +
+        "<br>" +
+        WD.join(" $ ") +
+        "<br>" +
+        WD.pop() +
+        "<br>" +
+        WD.push("C++") + "*" +
+        WD +
+        "<br>" +
+        WD.shift() + "*" + WD +
+        "<br>" +
+        WD.unshift("PYTHON") + "*" + WD +
+        "<br>" +
+        delete WD[0] + "*" + "The first fruit is: " + WD[0]
+        ;
+    </script>
+  </body>
+</html>

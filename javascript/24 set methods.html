@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set methods</title>
+</head>
+<body>
+    <h2>
+        set.size method
+    </h2>
+    <p id="demo"></p>
+    <h2>
+        set.add method
+    </h2>
+    <p id="demo2"></p>
+    <h2>
+        set.has method
+    </h2>
+    <p id="demo3"></p>
+    <h2>
+        set.forEach method
+    </h2>
+    <p id="demo4"></p>
+    <h2>
+        set.values method
+    </h2>
+    <p id="demo5"></p>
+    <script>
+        const javaset = new Set(["hello","java","script"]);
+        
+        document.getElementById("demo").innerHTML = "The set has " + javaset.size + " values.";
+        const javast = new Set(["hello","java","script"]);
+        javast.add("set");
+        document.getElementById("demo2").innerHTML =  javast + javast.size;
+        answer = javast.has("hello");
+document.getElementById("demo3").innerHTML = "The answer is " + answer;
+let text = "";
+javast.forEach (function(value) {
+  text += value + "<br>";
+})
+
+document.getElementById("demo4").innerHTML = text;
+const myIterator = javast.values();
+let txt = "";
+for (const x of myIterator) {
+  txt += x + "<br>";
+}
+document.getElementById("demo5").innerHTML = txt;
+       </script>
+
+        
+</body>
+</html>

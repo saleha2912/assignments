@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: black;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+.flex-container>div{
+  background-color: black;
+  color: white;
+  margin: 20px;
+  display: flex;
+  width: 100px;
+  text-align: center;
+  padding: auto;
+
+
+              
+
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+    background-color: rgb(158, 255, 23);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-container>div{
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
+  margin: 30px;
+  display: flex;
+  width: 80px;
+  text-align: left;
+  padding: 15px;
+}
+}
+    </style>
+</head>
+<body>
+    <div>
+        <div class="flex-container">
+            <div>About</div>
+            <div>Courses</div>
+            <div>forms</div>
+            <div>Learning Paths</div>
+            <div>Contact</div>
+          </div>
+          
+    </div>
+</body>
+</html>

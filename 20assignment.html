@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+    <style>
+        body{
+            background-color: rgb(190, 238, 238);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Fill your data</h1>
+
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="">
+
+        <h2>choose your gender</h2>
+
+        <input type="radio" id="male" name="gender">
+        <label for="male">MALE</label><br>
+        <input type="radio" id="female" name="gender">
+        <label for="female">FEMALE</label><br>
+        <input type="radio" id="other" name="gender">
+        <label for="other">OTHER</label><br>
+
+        <h2>choose your favourite color</h2>
+
+        <input type="radio" id="red" name="fav_color" value="red">
+        <label for="red">RED</label><br>
+        <input type="radio" id="blue" name="fav_color" value="blue">
+        <label for="blue">BLUE</label><br>
+        <input type="radio" id="black" name="fav_color" value="black">
+        <label for="black">BLACK</label>
+
+        <h2>read and tick the checkbox</h2>
+
+        <input type="checkbox" id="respect" name="respect">
+        <label for="respect"> you should respect your parents</label><br>
+        <input type="checkbox" id="leadership" name="leadership">
+        <label for="leadership"> leadership is good quality</label><br><hr>
+        <input type="submit" value="click to submit" style="background-color: green;color: white;">
+    </form>
+
+</body>
+
+</html>

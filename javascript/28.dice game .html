@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dice game</title>
+    <style>
+        div{
+         border: 2px green double;
+         width: 30px;
+         height: 30px;
+         text-align: center;
+         padding: auto;
+        }
+        a{
+            font-size: 30px;
+            font-family: fantasy;
+            font-weight: 50;
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:void(0)"onclick="roll()">Dice Roll</a>
+    <div id="result"></div>
+    <script>
+    function roll() {
+        var rand =Math.floor(Math.random()*6)+1;
+        document.getElementById("result").innerHTML=rand;
+    }
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS operators</title>
+</head>
+<body>
+    <h2>arithmatic operators</h2>
+    <p id="demo"></p>
+    <h2>assignment operators</h2>
+    <p id="demo2"></p>
+    <h2>comparison operators</h2>
+    <p id="demo3"></p>
+    <h2>logical operators</h2>
+    <p id="demo4"></p>
+    <script>
+        let a = 45;
+        let b = 5;
+        let c = (a + b) * b;
+        document.getElementById("demo") .innerHTML = c;
+        var  x = 10;
+        x += 5;
+        document.getElementById("demo2") .innerHTML = x ;
+        let text1 = 20;
+        let text2 = "20"
+        let result = text1 === text2;
+        document.getElementById("demo3") .innerHTML = result ;
+        let m = 5;
+        let n = 6;
+        let show = m<n && m==5;
+        document.getElementById("demo4") .innerHTML = show ;
+    </script>
+</body>
+</html>

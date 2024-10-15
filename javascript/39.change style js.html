@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>changing element Style</title>
+    <style>
+        div{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div onmouseover="mouseOver(this)"
+    onmouseout="mouseOut=(this)"
+    >This is a heading</div>
+    <script>
+        function mouseOver(element) {
+            text.style.fontSize ="50px";
+        };
+        function mouseOut(element) {
+         text.style.fontSize = "20px";   
+        };
+    </script>
+</body>
+</html>

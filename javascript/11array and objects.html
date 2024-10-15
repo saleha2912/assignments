@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Arrays and Objects</title>
+</head>
+<body>
+ <h1>Nested Arrays and Objects</h1>
+ <p id="demo"></p>
+
+<script>
+let x = "";
+const india = {
+  name: "my country",
+  state: [
+    {name:"Punjab", city:["Ludhiana", "Chandigarh", "Amritsar"]},
+    {name:"Jharkhand", city:["Dhanbaad", "Ranchi", "Hajaribagh"]},
+    {name:"U.P.", city:["Lucknow", "Aligarh", "Agra"]}
+  ]
+}
+
+for (let i in india.state) {
+  x += "<h2>" + india.state[i].name + "</h2>";
+  for (let j in india.state[i].city) {
+    x += india.state[i].city[j] + "<br>";
+  }
+}
+
+document.getElementById("demo").innerHTML = x;
+</script>
+</body>
+</html>

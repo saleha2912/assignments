@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hide and show an element</title>
+    <style>
+        div{
+            background-color: yellowgreen;
+            color: black;
+            font-size: 50px;
+            padding: auto;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mypara">
+        my name is aliya
+    </div>
+    <button onclick="hideShow()">Hide and Show</button>
+    <script>
+var div = document.getElementById('mypara');
+var display = 0;
+
+function hideShow() 
+{
+   if(display == 1)
+   {
+    div.style.display = 'block';
+    display = 0;
+   }    
+   else
+   {
+    div.style.display = 'none';
+    display = 1;
+   }
+}
+    </script>
+</body>
+</html>

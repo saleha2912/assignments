@@ -1,0 +1,13 @@
+{
+    "name": "Amazing Institute", 
+    "age": 3,
+    "is_institute": true,
+    "mobile_no": null,
+    "p_lang": ["html","c","c++","java"],
+    "address":{
+        "city": "ludhiana",
+        "state": "punjab",
+        "pincode": 141015
+    } 
+
+}

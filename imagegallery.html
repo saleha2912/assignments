@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+@media screen and (max-width: 900px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+
+<div class="header">
+  <h1>Image Gallery</h1>
+  <h2>Resize the browser window to see the responsive effect.</h2>
+</div>
+
+<div class="row"> 
+  <div class="column">
+    <img src="f..png" style="width:100%">
+    <img src="f6.gif" style="width:100%">
+    <img src="flowers-rose.gif" style="width:100%">
+    <img src="flowers.gif" style="width:100%">
+    <img src="Flowers Flowers For You .gif" style="width:100%">
+    <img src="rose-flower.gif" style="width:100%">
+    <img src="HTML.png" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="f..png" style="width:100%">
+    <img src="f6.gif" style="width:100%">
+    <img src="flowers-rose.gif" style="width:100%">
+    <img src="flowers.gif" style="width:100%">
+    <img src="Flowers Flowers For You .gif" style="width:100%">
+    <img src="rose-flower.gif" style="width:100%">
+    <img src="HTML.png" style="width:100%">
+  </div> 
+   
+  <div class="column">
+    <img src="f..png" style="width:100%">
+    <img src="f6.gif" style="width:100%">
+    <img src="flowers-rose.gif" style="width:100%">
+    <img src="flowers.gif" style="width:100%">
+    <img src="Flowers Flowers For You .gif" style="width:100%">
+    <img src="rose-flower.gif" style="width:100%">
+    <img src="HTML.png" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="f..png" style="width:100%">
+    <img src="f6.gif" style="width:100%">
+    <img src="flowers-rose.gif" style="width:100%">
+    <img src="flowers.gif" style="width:100%">
+    <img src="Flowers Flowers For You .gif" style="width:100%">
+    <img src="rose-flower.gif" style="width:100%">
+    <img src="HTML.png" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>

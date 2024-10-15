@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <h2>object properties</h2>
+    <p id="object"></p>
+    <h2>object method</h2>
+    <p id="objectm"></p>
+    <h2>object display</h2>
+    <p id="Stringify Object"></p>
+    <script>
+        let person = {
+        fname: "java",
+        lname: "script",
+        };  
+        document.getElementById("object").innerHTML = person.fname + " " + person.lname;
+        const girl = {
+  Name: "nancy",
+  age: "12 y'o",
+  height: "6 ft.",
+  aboutgirl: function() {
+    return this.Name + "," + this.age + "," + this.height;
+  }
+};
+
+document.getElementById("objectm").innerHTML = girl.aboutgirl();
+
+let myString = JSON.stringify(girl);
+
+document.getElementById("Stringify Object").innerHTML = myString;
+
+    </script>
+</body>
+</html>

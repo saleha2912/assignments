@@ -1,0 +1,17 @@
+h1 {
+  color: rgb(2, 51, 19);
+  font-family: verdana;
+  font-size: 300%;
+  border: 2px solid powderblue;
+  padding: 30px;
+  margin: 50px
+}
+
+p {
+  color: rgb(8, 8, 43);
+  font-family: verdana;
+  font-size: 200%;
+  border: 2px solid powderblue;
+  padding: 20px;
+  margin: 40px
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        tr, td  {
+            width: 50%;
+            height: 200px;
+            border-collapse: collapse;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="background-color: greenyellow;text-align: center;">iframe and target of a link</h2>
+    <table>
+        <tr>
+            <td><iframe width="400" height="315" src="https://www.youtube.com/embed/01Imoibt4as"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen name="IFRAME1"></iframe></td>
+            <td><iframe width="400" height="315" src="https://www.youtube.com/embed/aUerDG2SNTA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen name="IFRAME2"></iframe></td>
+            <td><iframe width="400" height="315" src="https://www.youtube.com/embed/rjnwFGYGpEE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen name="IFRAME3"></iframe></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.w3schools.com/html/default.asp;" target="IFRAME2">click here to see link in
+                    iframe2</a></td>
+            <td><a href="https://www.w3schools.com/html/html_iframe.asp" target="IFRAME3">click here to see link in
+                    IFRAME3</a></td>
+            <td><a href="https://www.w3schools.com/html/html_scripts.asp" target="IFRAME1">click here to see link inIFRAME1</a>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

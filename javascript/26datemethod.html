@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date get methods</title>
+</head>
+<body>
+    <h1>Date Get Methods</h1>
+    <h2><pre> getFullYear()	Get year as a four digit number (yyyy)
+getMonth()	Get month as a number (0-11)
+getDate()	Get day as a number (1-31)
+getDay()	Get weekday as a number (0-6)
+getHours()	Get hour (0-23)
+getMinutes()	Get minute (0-59)
+getSeconds()	Get second (0-59)
+getMilliseconds()	Get millisecond (0-999)
+getTime()	Get time (milliseconds since January 1, 1970)</pre></h2>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+    <script>
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d.getFullYear();
+document.getElementById("demo1").innerHTML = d.getMonth() + 1;
+document.getElementById("demo2").innerHTML = d.getDate();
+document.getElementById("demo3").innerHTML = d.getHours();
+document.getElementById("demo4").innerHTML = d.getMinutes();
+document.getElementById("demo5").innerHTML = d.getSeconds();
+document.getElementById("demo6").innerHTML = d.getMilliseconds();
+document.getElementById("demo7").innerHTML = d.getDay();
+document.getElementById("demo8").innerHTML = d.getTime();
+document.getElementById("demo9").innerHTML ="The time zone difference in minutes is:" + d.getTimezoneOffset();
+
+    </script>
+</body>
+</html>

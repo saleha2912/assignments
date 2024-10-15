@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 column css layout</title>
+    <style>
+        body{
+            background-color: #7a4b4b;
+            margin: 10px;
+        }
+        .header {
+            background-color: #F1F1F1;
+            text-align: left;
+            padding: 2px;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #7a4b4b;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+
+        }
+
+        .column {
+            float: left;
+
+            padding: 15px;
+
+        }
+
+        .column.side65 {
+            width: 65%;
+            padding: 15px;
+            background-color: rgb(90, 216, 164);
+        }
+
+        .column.side {
+            width: 30%;
+            padding: 15px;
+            background-color: rgb(166, 100, 204);
+        }
+
+
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Simple 2 column CSS layout, final layout</h1>
+    </div>
+    <div class="topnav"><a href="">Option1</a><a href="">Option2</a><a href="">Option3</a><a href="">Option4</a><a
+            href="">Option5</a>
+    </div>
+    <div class="row">
+        <div class="column side65">
+            <h2>Column 1 </h2>
+            <P><a href="">456 Street House</a></p>
+            <p><a href="">Simple 2 column CSS layout</a></p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eius fugiat ut! Ducimus nemo eos ipsa.
+            Voluptatibus in rem ipsum cum excepturi officiis unde fugit distinctio est obcaecati ipsa neque, facilis
+            repudiandae inventore ratione voluptate quaerat nulla nam praesentium veniam reprehenderit ad. Ex magni eius
+            minima veniam ducimus, ratione tenetur!
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates non ea quae ipsam quo neque porro,
+                praesentium vero? Exercitationem nihil velit aspernatur quia nobis ad reprehenderit deleniti pariatur
+                laudantium tenetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsa quis possimus alias et quasi dolore
+                a,
+                </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem repellat, similique voluptatem perspiciatis
+                ducimus quam magni possimus voluptates debitis modi enim soluta deleniti vel dicta quia. Aliquid maiores
+                doloribus quo totam corporis? Soluta, eveniet expedita. Recusandae voluptatem dolore cupiditate quaerat!
+                Delectus numquam iusto incidunt doloribus consectetur voluptas blanditiis tempore eaque!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, esse! Quis, perspiciatis. Asperiores
+                quod, culpa omnis, excepturi earum neque ipsa, commodi numquam quis saepe iste in eligendi eum soluta.
+                Vero laborum, debitis at consequuntur veniam recusandae harum modi odio labore quibusdam praesentium
+                laboriosam ea magnam, eveniet ad nostrum. Dolor explicabo alias est illo earum harum iusto odit
+                temporibus minus, placeat id! Beatae fuga odit ipsum nesciunt tempora sit molestiae voluptas esse
+                quibusdam omnis vel sequi eius id delectus, dignissimos soluta atque natus reiciendis, laboriosam velit
+                nihil sint voluptatum recusandae aperiam? Earum quisquam deserunt culpa ipsam magni, quibusdam porro
+                eveniet fugiat?</p>
+        </div>
+        <div class="column side">
+            <h2>Column 2 </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio cumque autem dignissimos nam sit fuga
+                accusantium optio laborum rerum dolor.</p>
+            <ul>
+                <li><a href="">link1</a></li>
+                <li><a href="">link2</a></li>
+                <li><a href="">link3</a></li>
+                <li><a href="">link4</a></li>
+                <li><a href="">link5</a></li>
+                <li><a href="">link6</a></li>
+                <li><a href="">link7</a></li>
+                <li><a href="">link8</a></li>
+                <li><a href="">link9</a></li>
+                <li><a href="">link10</a></li>
+                <li><a href="">link11</a></li>
+                <li><a href="">link12</a></li>
+                <li><a href="">link13</a></li>
+                <li><a href="">link14</a></li>
+                <li><a href="">link15</a></li>
+                <li><a href="">link16</a></li>
+                <li><a href="">link17</a></li>
+                <li><a href="">link18</a></li>
+                <li><a href="">link19</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

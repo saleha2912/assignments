@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gris in css</title>
+    <style>
+        .item1 { grid-area: header;
+        background-color: blueviolet;
+        }
+        .item2 { grid-area: sidebar;
+            background-color: rgb(39, 201, 125);
+        }
+        .item3 { grid-area: content-1; 
+            background-image: linear-gradient(145deg, blueviolet, rgb(69, 140, 233), rgb(37, 224, 131));
+        }
+        .item4 { grid-area: content-2; 
+            background-image: linear-gradient(145deg, blueviolet, rgb(69, 140, 233), rgb(37, 224, 131));
+        }
+        .item5 { grid-area: content-3; 
+        background-image: linear-gradient(145deg, blueviolet, rgb(69, 140, 233), rgb(37, 224, 131));
+        }
+        .item6 { grid-area: footer;
+            background-color: blueviolet;
+        }
+        
+        .grid-container {
+          display: grid;
+          grid-template-areas:
+            'header header header header header header' 
+            'sidebar content-1 content-1 content-1 content-1 content-1'
+            'sidebar content-2 content-2 content-2  content-3 content-3 '
+            'sidebar footer footer footer footer footer';
+          gap: 15px;
+          background-color: #272727;
+          padding: 10px;
+          height: 600px;
+        }
+        
+        .grid-container > div {
+          text-align: center;
+          padding: 45px 0;
+          font-size: 30px;
+          color: white;
+          border: 4px solid black;
+        }
+        </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">sidebar</div>
+        <div class="item3">content-1</div>
+        <div class="item4">content-2</div>
+        <div class="item5">content-3</div>
+        <div class="item6">Footer</div>
+      </div>
+</body>
+</html>

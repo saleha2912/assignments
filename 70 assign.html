@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover text decoration</title>
+    <style>
+        .div1 {
+            height: 100px;
+            width: 300px;
+            text-align: center;
+            border: 5px solid black;
+            box-shadow: 5px 5px 2px black;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        a:link {
+            color: black;
+            text-decoration: underline black;
+            display: inline-block;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            font-weight: bolder;
+            text-shadow: 2px 2px 5px gray;
+        }
+
+        .div2 {
+            height: 50px;
+            width: 300px;
+            text-align: center;
+            background-color: green;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+
+        }
+
+        a.two:link {
+            text-decoration: none;
+            color: white;
+
+
+        }
+
+        a.twohover:hover {
+            text-decoration: wavy yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <h1>
+            thin <a href="aliya-10.gif">link</a> turns bold
+        </h1>
+    </div>
+    <div class="div2">
+        <p>
+            <a href="earth-americas-solid.svg" class="two twohover">that cool wiggly underline that people like</a>
+        </p>
+    </div>
+    <h2>
+        inline text <span style="text-decoration: underline yellow ;">decoration</span> effects
+    </h2>
+</body>
+
+</html>

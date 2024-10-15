@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+    <style>
+        table,
+        tr {
+            border: 2px double black;
+            background-color: rgb(189, 210, 248);
+            align-content: center;
+            width: 100%;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <form method="get">
+        <div>
+        </div>
+        <h2 style="text-align: center;"> Student Details</h2>
+        <table id="1st_table" cellspacing="5px" cellpadding="5%" text-align="center">
+            <tr>
+                <td width="100px"> Course Name </td>
+                <td width="500px"> <input type="text" name="course name"></td>
+            </tr>
+            <tr>
+                <td>purpose of course</td>
+                <td><textarea rows="3" cols="15" name="purpose"> </textarea></td>
+            </tr>
+            <tr>
+                <td> student's full name:</td>
+                <td>
+                    <input type="text" name="full name">
+                </td>
+            </tr>
+            <tr>
+                <td> father's name: </td>
+                <td> <input type="text" name="father's name"></td>
+            </tr>
+            <tr>
+                <td>mother's name:</td>
+
+                <td><input type="text" name="mother's name"></td>
+            </tr>
+            <tr>
+                <td> contact number:</td>
+                <td><input type="text" name="contact no."></td>
+            </tr>
+            <tr>
+                <td>hours of class:</td>
+                <td> <input type="checkbox" name="class" id="class">one hours
+                    <input type="checkbox" name="class" id="class">two hours
+                    <input type="checkbox" name="class" id="class">three hours
+                </td>
+            </tr>
+            <tr>
+                <td> qualification:</td>
+                <td> <select name="qua." id="qualification">
+                        <option value="1">high</option>
+                        <option value="2">sen. sec.</option>
+                        <option value="3">bachelors</option>
+                        <option value="4">masters</option>
+                    </select></td>
+            </tr>
+
+
+        </table>
+    </form>
+</body>
+
+</html>
